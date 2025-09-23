@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikolaos Spanos — Research</title>
+  <meta name="description" content="Personal research page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0f1530; --border:#223; --text:#e6e9f2; --muted:#a9b0c2; --accent:#8bd3ff; --accent2:#d9a5ff;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(139,211,255,.10), transparent 60%),
+                  radial-gradient(900px 600px at 120% 10%, rgba(217,165,255,.10), transparent 60%), var(--bg);
+      color:var(--text);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px; margin:0 auto; padding:40px 20px 80px}
+    header{display:grid; grid-template-columns:160px 1fr; gap:28px; align-items:center; margin-bottom:36px}
+    .avatar{width:160px; height:160px; border-radius:22px; background:linear-gradient(135deg,var(--accent),var(--accent2)); padding:3px; box-shadow:var(--shadow)}
+    .avatar img{width:100%; height:100%; object-fit:cover; border-radius:20px; display:block}
+    h1{font-size:36px; line-height:1.1; margin:0 0 6px; letter-spacing:.2px}
+    .subtitle{font-size:16px; color:var(--muted)}
+    .quick{display:flex; gap:12px; margin-top:12px; flex-wrap:wrap}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--border); border-radius:999px; color:var(--text); background:rgba(255,255,255,.02)}
+    .chip svg{opacity:.9}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)); border:1px solid var(--border); border-radius:20px; box-shadow:var(--shadow)}
+    .grid{display:grid; grid-template-columns: 1.3fr .9fr; gap:22px}
+    .about{padding:22px}
+    .about p{margin:0 0 10px; color:var(--text)}
+    .about p.muted{color:var(--muted)}
+    .links{padding:18px; display:grid; gap:10px}
+    .links a{display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:rgba(255,255,255,.02)}
+    .section{margin-top:32px}
+    .section h2{font-size:20px; letter-spacing:.2px; margin:0 0 14px}
+    /* Publications */
+    .pubs{padding:16px}
+    .pub{display:grid; grid-template-columns: 1fr auto; gap:6px 14px; padding:14px; border:1px solid var(--border); border-radius:14px; margin-bottom:10px; background:rgba(255,255,255,.02)}
+    .pub-title{font-weight:650}
+    .pub-meta{color:var(--muted); font-size:14px}
+    .tagrow{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{font-size:12px; padding:6px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted)}
+    .btns{display:flex; gap:8px}
+    .btns a{font-size:13px; padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.03)}
+    .year{position:sticky; top:10px; align-self:start; font-weight:700; color:var(--accent2)}
+    .news li{margin-bottom:8px}
+    footer{margin-top:32px; padding-top:16px; border-top:1px dashed var(--border); color:var(--muted)}
+    @media (max-width: 900px){
+      .grid{grid-template-columns: 1fr}
+      .year{position:static}
+      header{grid-template-columns:100px 1fr}
+      .avatar{width:100px; height:100px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">
+        <!-- Replace avatar.jpg with your photo in the repo root -->
+        <img src="avatar.jpg" alt="Portrait of Nikolaos Spanos" loading="lazy" />
+      </div>
+      <div>
+        <h1 id="your-name">Nikolaos Spanos</h1>
+        <div class="subtitle">Ph.D. Student, ECE · National Technical University of Athens</div>
+        <div class="quick">
+          <span class="chip" title="Email">📧 <a id="email-link" href="mailto:nspanos@somewhere.edu">nspanos@somewhere.edu</a></span>
+          <a class="chip" href="https://scholar.google.com/citations?user=QDPr9W8AAAAJ&hl=en" target="_blank" rel="noopener">🎓 Google Scholar</a>
+          <a class="chip" href="https://github.com/nikspanos" target="_blank" rel="noopener">💻 GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/in/nikolaos-spanos" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="chip" href="cv.pdf" target="_blank" rel="noopener">📄 CV</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="panel about">
+        <h2>About</h2>
+        <!-- ✍️ Write 2–4 short paragraphs about yourself below -->
+        <p>I'm a researcher working on <em>natural language processing</em> and <em>explainable AI</em>. My work focuses on model reasoning, counterfactuals, and transparent evaluation.</p>
+        <p>Previously, I completed my PhD at <a href="#">Your Lab</a>, <a href="#">Your University</a>. I'm always open to collaborations — feel free to reach out.</p>
+        <p class="muted"><strong>Tip:</strong> Edit this section directly in <code>index.html</code>. Replace the avatar image with <code>avatar.jpg</code> and drop your <code>cv.pdf</code> in the root of the repo.</p>
+      </section>
+
+      <aside class="panel links">
+        <h2>Quick Links</h2>
+        <a href="#publications">📚 Publications</a>
+        <a href="#news">📰 News</a>
+        <a href="#service">🧩 Service</a>
+        <a href="#contact">✉️ Contact</a>
+      </aside>
+    </div>
+
+    <section id="news" class="section panel about">
+      <h2>Latest News</h2>
+      <ul class="news" id="news-list">
+        <!-- Example items; replace with your own -->
+        <li>Sept 2025 — Paper accepted to <strong>ACL 2026</strong> on counterfactual evaluation.
+        </li>
+        <li>Jun 2025 — Two papers accepted to <strong>EMNLP 2025</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="section panel">
+      <div style="display:grid; grid-template-columns: 80px 1fr; gap:12px; align-items:start">
+        <div class="year">Selected<br>Works</div>
+        <div class="pubs" id="pubs"></div>
+      </div>
+    </section>
+
+    <section id="service" class="section panel about">
+      <h2>Service</h2>
+      <ul>
+        <li>Reviewer: ACL, EMNLP, NAACL, ICML, NeurIPS</li>
+        <li>Organization: Workshop on XAI, 2025</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section panel about">
+      <h2>Contact</h2>
+      <p>Email is best: <a href="mailto:nspanos@somewhere.edu">you@university.edu</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name · Built with a lightweight static template.
+    </footer>
+  </div>
+
+  <script>
+    // ======== CONFIG ========
+    // Update your Google Scholar profile here (the one you sent):
+    const GOOGLE_SCHOLAR = "https://scholar.google.com/citations?user=QDPr9W8AAAAJ&hl=el";
+
+    // Add your papers here. This renders like your colleague's site —
+    // title → authors → venue, year → action links (code/pdf/demo). Newest first.
+    // Tip: you can export BibTeX from Google Scholar and paste details here.
+    // Minimal example entries are included. Replace with your own.
+    const PUBLICATIONS = [
+      {
+        title: "AILS-NTUA at SemEval-2025 Task 3: Leveraging Large Language Models and Translation Strategies for Multilingual Hallucination Detection",
+        authors: "D. Karkani, M. Lymperaiou, G. Filandrianos, N. Spanos, A. Voulodimos, G. Stamou",
+        venue: "SemEval 2025 (ACL Workshops)",
+        tags: ["LLMs","Hallucination Detection"],
+        links: { pdf: "https://aclanthology.org/2025.semeval-1.172.pdf" }
+      },
+      {
+        title: "Analyze-Prompt-Reason: A Collaborative Agent-Based Framework for Multi-Image Vision-Language Reasoning",
+        authors: "A. Vlachos, G. Filandrianos, M. Lymperaiou, N. Spanos, I. Mitsouras, V. Karampinis, A. Voulodimos",
+        venue: "ACM MM (2025, preprint)",
+        tags: ["Multimodal","VLM","Agents"],
+        links: { pdf: "https://arxiv.org/pdf/2508.00356" }
+      },
+      {
+        title: "Complex Style Image Transformations for Domain Generalization in Medical Images",
+        authors: "N. Spanos, A. Arsenos, P.-A. Theofilou, P. K. Tzouveli, A. Voulodimos, S. D. Kollias",
+        venue: "CVPR Workshops (2024)",
+        tags: ["Medical Imaging","Domain Generalization","Style Transfer"],
+        links: { pdf: "https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Spanos_Complex_Style_Image_Transformations_for_Domain_Generalization_in_Medical_Images_CVPRW_2024_paper.pdf", demo: "https://arxiv.org/abs/2406.00298" }
+      }
+    ];
+
+    // Optional: latest news items (same pattern as colleague's site)
+    const NEWS = [
+      { text: "NeurIPS 2025 Paper Accepted — V‑CECE (training‑free LVLM counterfactuals)", href: "#" },
+      { text: "3 papers accepted in EMNLP 2025", href: "#" },
+    ];
+
+    // ======== RENDER ========
+    const pubsEl = document.getElementById('pubs');
+
+    function link(label, href){
+      return href ? `<a href="${href}" target="_blank" rel="noopener">${label}</a>` : '';
+    }
+
+    PUBLICATIONS.forEach(p => {
+      const tagHTML = (p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+      const btns = [ link('code', p.links?.code), link('pdf', p.links?.pdf), link('demo', p.links?.demo) ]
+        .filter(Boolean).join(' ');
+      pubsEl.insertAdjacentHTML('beforeend', `
+        <article class="pub">
+          <div>
+            <div class="pub-title">${p.title}</div>
+            <div class="pub-meta">${p.authors} · ${p.venue}</div>
+            <div class="tagrow">${tagHTML}</div>
+          </div>
+          <div class="btns">
+            ${btns}
+          </div>
+        </article>`);
+    });
+
+    // News items (edit in the #news-list markup or here)
+    const newsList = document.getElementById('news-list');
+    if(newsList && NEWS.length){ newsList.innerHTML = NEWS.map(n=> n.href? `<li><a href="${n.href}">${n.text}</a></li>` : `<li>${n.text}</li>`).join(''); }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+  =========================
+  Quick Start (GitHub Pages)
+  =========================
+  1) Create a new repo named: yourhandle.github.io
+  2) Put this file in the root as index.html
+     (Optionally add avatar.jpg and cv.pdf next to it.)
+  3) Commit & push. Pages will auto‑publish at https://yourhandle.github.io
+  4) Edit the ABOUT section and the PUBLICATIONS array above.
+
+  To add a paper like your colleague's page (title → authors → venue/year → code/pdf/demo buttons):
+  PUBLICATIONS.push({
+    title: "...",
+    authors: "...",
+    venue: "CONF, 2025",
+    tags: ["Topic","Keyword"],
+    links: { code: "https://github.com/...", pdf: "https://arxiv.org/...", demo: "https://..." }
+  });
+
+  Pro tip: You can export BibTeX from Google Scholar and paste values here.
+  If you prefer a separate data file, rename this array to papers.json and fetch it via fetch('papers.json').
+  -->
+</body>
+</html>
