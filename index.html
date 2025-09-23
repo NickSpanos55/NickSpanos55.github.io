@@ -126,7 +126,7 @@
 
     <section id="contact" class="section panel about">
       <h2>Contact</h2>
-      <p>Email is best: <a href="mailto:nspanos@somewhere.edu">you@university.edu</a>.</p>
+      <p>Email is best: <a href="mailto:nspanos@ails.ece.ntua.gr">you@university.edu</a>.</p>
     </section>
 
     <footer>
@@ -136,14 +136,16 @@
 
   <script>
     // ======== CONFIG ========
-    // Update your Google Scholar profile here (the one you sent):
     const GOOGLE_SCHOLAR = "https://scholar.google.com/citations?user=QDPr9W8AAAAJ&hl=el";
 
-    // Add your papers here. This renders like your colleague's site —
-    // title → authors → venue, year → action links (code/pdf/demo). Newest first.
-    // Tip: you can export BibTeX from Google Scholar and paste details here.
-    // Minimal example entries are included. Replace with your own.
     const PUBLICATIONS = [
+      { 
+        title: "V-CECE: Visual Counterfactual Explanations via Conceptual Edits",
+        authors: "N. Spanos, M. Lymperaiou, G. Filandrianos, K. Thomas, A. Voulodimos, G. Stamou"
+        venue: "NeurIPS 2025",
+        tags: ["Countefactuals", "Image Generation", "Explainability", "Computer Vision"]
+        links: { pdf: "https://arxiv.org/pdf/2509.16567"}
+      },
       {
         title: "AILS-NTUA at SemEval-2025 Task 3: Leveraging Large Language Models and Translation Strategies for Multilingual Hallucination Detection",
         authors: "D. Karkani, M. Lymperaiou, G. Filandrianos, N. Spanos, A. Voulodimos, G. Stamou",
@@ -159,18 +161,24 @@
         links: { pdf: "https://arxiv.org/pdf/2508.00356" }
       },
       {
+        title: "Explaining Vision GNNs: A Semantic and Visual Analysis of Graph-based Image Classification",
+        authors: "N. Chaidos, A. Dimitriou, N. Spanos, A. Voulodimos, G. Stamou",
+        venue: "xAI-World-Conference (2025)",
+        tags: ["Vision GNN, Explanability, Computer Vision"],
+        links: { pdf: "https://arxiv.org/pdf/2504.19682" }
+      },
+      {
         title: "Complex Style Image Transformations for Domain Generalization in Medical Images",
         authors: "N. Spanos, A. Arsenos, P.-A. Theofilou, P. K. Tzouveli, A. Voulodimos, S. D. Kollias",
         venue: "CVPR Workshops (2024)",
         tags: ["Medical Imaging","Domain Generalization","Style Transfer"],
-        links: { pdf: "https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Spanos_Complex_Style_Image_Transformations_for_Domain_Generalization_in_Medical_Images_CVPRW_2024_paper.pdf", demo: "https://arxiv.org/abs/2406.00298" }
+        links: { pdf: "https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Spanos_Complex_Style_Image_Transformations_for_Domain_Generalization_in_Medical_Images_CVPRW_2024_paper.pdf"}
       }
     ];
 
     // Optional: latest news items (same pattern as colleague's site)
     const NEWS = [
-      { text: "NeurIPS 2025 Paper Accepted — V‑CECE (training‑free LVLM counterfactuals)", href: "#" },
-      { text: "3 papers accepted in EMNLP 2025", href: "#" },
+      { text: "NeurIPS 2025 Paper Accepted — V‑CECE (training‑free LVLM counterfactuals)"},
     ];
 
     // ======== RENDER ========
