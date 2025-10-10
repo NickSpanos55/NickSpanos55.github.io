@@ -30,4 +30,4 @@ You can find my CV [here][CV].
 
 [1-new]: https://www.ails.ece.ntua.gr/
 [2-new]: https://www.ece.ntua.gr/gr
-[CV]: cv.pdf
+[CV]: Resume_NikolaosSpanos_short.pdf
