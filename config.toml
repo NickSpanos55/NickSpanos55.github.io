@@ -1,0 +1,10 @@
+baseURL = "https://nickspanos55.github.io/"
+googleAnalytics = "UA/G-W3R0C8HCBQ"
+
+languageCode = "en-us"
+theme = "avicenna"
+title = "Nikolaos Spanos"
+
+[params]
+# for the copy-right section of your page
+name = "Nikolaos Spanos"

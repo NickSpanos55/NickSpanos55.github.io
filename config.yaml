@@ -1,0 +1,12 @@
+baseURL: 'https://nickspanos55.github.io'
+languageCode: 'en-us'
+title: 'Nikolaos Spanos'
+
+sitemap:
+  changefreq: 'monthly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
+params:
+  description: 'Researcher in Computer Vision, Generative Modeling and Domain, Vision-Language Modeling and Domain Generalization'
+  author: 'Nikolaos Spanos'
