@@ -10,7 +10,7 @@ authors:
 - Athanasios Voulodimos
 - Giorgos Stamou
 
-date: "2025-9-20"
+date: "2025-09-20"
 
 publication: "NeurIPS"
 
