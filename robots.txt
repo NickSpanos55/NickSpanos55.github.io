@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nickspanos55.github.io/sitemap.xml
